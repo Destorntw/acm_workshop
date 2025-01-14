@@ -44,63 +44,15 @@
 ---
 
 ## 4. Create Policies in a Git Repository
-### 4.1 Policy 1: Create a New Cluster Admin User
-1. Write a policy YAML file to create a new cluster admin user with a strong password.
-
-```yaml
-apiVersion: policy.open-cluster-management.io/v1
-kind: Policy
-metadata:
-  name: create-cluster-admin
-spec:
-  remediationAction: enforce
-  policy-templates:
-    - objectDefinition:
-        apiVersion: user.openshift.io/v1
-        kind: User
-        metadata:
-          name: new-cluster-admin
-        password: <strong-password>
-```
-
-### 4.2 Policy 2: Set the Upgrade Channel
-1. Write a policy YAML file to set the upgrade channel for the managed cluster.
-
-```yaml
-apiVersion: policy.open-cluster-management.io/v1
-kind: Policy
-metadata:
-  name: set-upgrade-channel
-spec:
-  remediationAction: enforce
-  policy-templates:
-    - objectDefinition:
-        apiVersion: config.openshift.io/v1
-        kind: ClusterVersion
-        spec:
-          channel: stable-4.16
-```
-
-### 4.3 Policy 3: Delete the KubeAdmin User
-1. Write a policy YAML file to delete the default KubeAdmin user on the managed cluster.
-
-```yaml
-apiVersion: policy.open-cluster-management.io/v1
-kind: Policy
-metadata:
-  name: delete-kubeadmin
-spec:
-  remediationAction: enforce
-  policy-templates:
-    - objectDefinition:
-        apiVersion: user.openshift.io/v1
-        kind: User
-        metadata:
-          name: kubeadmin
-```
+1. Create a new Git repository and organize it to hold the policy YAML files.
+2. Write three policies as follows:
+    - A policy to create a new cluster admin user with a strong password.
+    - A policy to set the upgrade channel for the managed cluster.
+    - A policy to delete the default KubeAdmin user on the managed cluster.
 
 > **Documentation Reference:**
 > - [Policy Framework](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/governance/governance)
+> - [Using GitOps for Policies](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/governance/governance#gitops)
 
 ---
 
@@ -122,6 +74,7 @@ spec:
 
 > **Documentation Reference:**
 > - [OSUS Operator](https://docs.openshift.com/container-platform/latest/updating/osus-operator.html)
+> - [Medium Article: OpenShift Update Service](https://medium.com/@hillayamir/openshift-update-service-your-personal-over-the-air-update-service-776b43230011)
 
 ---
 
@@ -132,4 +85,4 @@ spec:
 
 > **Documentation Reference:**
 > - [Cluster Updates](https://docs.openshift.com/container-platform/latest/updating/updating-cluster.html)
-- [Deleting Clusters](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/clusters/managing-clusters#delete-clusters)
+> - [Deleting Clusters](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/clusters/managing-clusters#delete-clusters)

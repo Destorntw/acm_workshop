@@ -29,7 +29,7 @@
 3. Verify that RHACM is installed by navigating to the RHACM console.
 
 > **Documentation Reference:**
-> - [Installing RHACM](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/install/index)
+> - [Installing RHACM](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/install/index)
 
 ---
 

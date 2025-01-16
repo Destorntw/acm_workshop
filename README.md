@@ -10,7 +10,7 @@
     - [Policy 3: Delete the KubeAdmin User](#policy-3-delete-the-kubeadmin-user)
 5. [Apply Policies Using the Governance and Compliance Pane](#5-apply-policies-using-the-governance-and-compliance-pane)
 6. [Install, Configure, and Explore the OSUS Operator](#6-install-configure-and-explore-the-osus-operator)
-7. [Update the Cluster, Verify, and Cleanup](#7-Explore-cluster-ACM-resources-Verify-and-Cleanup)
+7. [Explore cluster & ACM resources, Verify, and Cleanup](#7-explore-cluster-acm-resources-verify-and-cleanup)
 
 ---
 

@@ -10,7 +10,9 @@
     - [Policy 3: Delete the KubeAdmin User](#policy-3-delete-the-kubeadmin-user)
 5. [Apply Policies Using the Governance and Compliance Pane](#5-apply-policies-using-the-governance-and-compliance-pane)
 6. [Install, Configure, and Explore the OSUS Operator](#6-install-configure-and-explore-the-osus-operator)
-7. [Explore cluster & ACM resources, Verify, and Cleanup](#7-explore-cluster-acm-resources-verify-and-cleanup)
+7. [EExplore cluster and ACM resources, Verify, and Cleanup](#7-explore-cluster-and-acm-resources-verify-and-cleanup)
+8. [Bonus exercise](bonus-exercise)
+
 
 ---
 
@@ -78,7 +80,7 @@
 
 ---
 
-## 7. Explore cluster & ACM resources, Verify, and Cleanup
+## 7. Explore cluster and ACM resources, Verify, and Cleanup
 1. Explore managed cluster Namespace on Hub cluster.
 2. Explore agent Namespace on managed cluster.
 3. Explore RHACM search capabilites.
@@ -90,3 +92,14 @@
 > - [klusterlet addons](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/klusterlet_add-ons/index)
 > - [Cluster Updates](https://docs.openshift.com/container-platform/4.17/updating/understanding_updates/intro-to-updates.html)
 > - [Deleting Clusters](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/clusters/cluster_mce_overview#remove-managed-cluster)
+
+---
+
+## 8. Bonus exercise
+1. Follow the documentation and install Kyverno using ACM policies and application lifecycle.
+* Please note - all resources are planned for RHACM 2.9 please update them in your git (fork original git repo)
+
+
+> **Documentation Reference:**
+> - [kyverno excercise](https://drive.google.com/file/d/1aZSzahI5CYV-ZBjgkr-zxx0jmyiB5RPA/view?usp=sharing)
+

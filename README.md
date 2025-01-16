@@ -52,7 +52,7 @@
 
 > **Documentation Reference:**
 > - [Policy Framework](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/governance/governance)
-> - [Using GitOps for Policies](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/governance/governance#gitops)
+> - [Using GitOps for Policies](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/applications/index)
 
 ---
 
@@ -73,16 +73,20 @@
 3. Explore the features provided by the OSUS operator.
 
 > **Documentation Reference:**
-> - [OSUS Operator](https://docs.openshift.com/container-platform/latest/updating/osus-operator.html)
+> - [OSUS updating a cluster in disconnected](https://docs.openshift.com/container-platform/4.13/updating/updating-restricted-network-cluster/restricted-network-update-osus.html)
 > - [Medium Article: OpenShift Update Service](https://medium.com/@hillayamir/openshift-update-service-your-personal-over-the-air-update-service-776b43230011)
 
 ---
 
-## 7. Update the Cluster, Verify, and Cleanup
-1. Use the OSUS operator to update the cluster to the latest version.
-2. Verify that the update was successful.
-3. Delete the managed cluster from RHACM to clean up resources.
+## 7. Explore cluster & ACM resources, Verify, and Cleanup
+1. Explore managed cluster Namespace on Hub cluster.
+2. Explore agent Namespace on managed cluster.
+3. Explore RHACM search capabilites.
+4. Explore RHACM cluster identifiying objects.
+5. Explore clusterlet addons
+6. Delete the managed cluster from RHACM to clean up resources. *Please click destroy cluster*
 
 > **Documentation Reference:**
-> - [Cluster Updates](https://docs.openshift.com/container-platform/latest/updating/updating-cluster.html)
-> - [Deleting Clusters](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/clusters/managing-clusters#delete-clusters)
+> - [klusterlet addons](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/klusterlet_add-ons/index)
+> - [Cluster Updates](https://docs.openshift.com/container-platform/4.17/updating/understanding_updates/intro-to-updates.html)
+> - [Deleting Clusters](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/clusters/cluster_mce_overview#remove-managed-cluster)
